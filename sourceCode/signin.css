@@ -1,0 +1,277 @@
+/* Set font and background color */
+#birthdate{
+  align-items: left;
+}
+fieldset{
+  padding-top: 10px;
+  height: 50%;
+  width: 50%;
+}
+
+.form-signin {
+  top: center;
+  left: center;
+  margin: 0px;
+  padding: 1px;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding-top: 3.5rem;
+    top: 20px;    
+    background-size: cover;
+    background-image: url("images/images.jpg"); 
+    background-repeat: no-repeat;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: auto;
+  }
+
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    clear: both;
+  }
+  
+  /* Style for form */
+  .form-signin {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+  }
+  
+  .form-signin h2 {
+    font-size: 12px;
+  }
+  
+  .form-signin label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-signin input[type="text"],
+  .form-signin input[type="email"],
+  .form-signin input[type="password"],
+  .form-signin select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .form-signin select option {
+    font-weight: normal;
+  }
+  
+  .form-signin input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .form-signin #agb {
+    font-weight: normal;
+    font-size: 14px;
+  }
+
+  
+  
+  .form-signin input[type="button"] {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .form-signin input[type="button"]:hover {
+    background-color: #0069d9;
+  }
+
+  #about_us{
+    padding-top: 5%;
+  }
+
+  #errormsg{
+    color:red;
+    padding: 10px;
+  }
+
+  span {
+    color: red;
+  }
+
+  /* Styles for the modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+}
+
+.close {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Styles for the "Upload Photo" button */
+#openModal {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#openModal:hover {
+  background-color: #0056b3;
+}
+
+.fotos{
+  max-width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.image-container {
+  display:flex;
+  align-items: center;
+  justify-content: center; /* Center images vertically in the column */
+  height: 100vh;
+}
+
+.image-container img {
+  margin: 10px;
+  width: 25%; 
+  height: 25%;
+}
+
+.responsive-image {
+  max-width: 100%; /* Ensure images don't exceed their container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+#openModal{
+  position: absolute;
+    top: 10%; 
+    right: 1%; 
+}
+
+.discussion-details{
+  border: 1px solid #000; 
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+.comment {
+  border: 1px solid #000; 
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.discussions{
+
+  padding: 10px;
+}
+
+#event-popup {
+  display: none;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 60%;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  z-index: 9999;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+#searchResults {
+  display: none;
+  position: absolute;
+  width: 200px;
+  z-index: 1;
+}
+
+#searchResults ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#searchResults li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+#searchResults li:hover {
+  background-color: #f0f0f0;
+}
+
+#chosenSuggestion {
+  margin-top: 20px;
+}
+
+.user_profile{
+  color: black;
+}
+
+.product {
+  width: 250px; 
+  height: 250px;
+  margin: 10px;
+  display: inline-block;
+  color: black;
+  padding: 10px;  
+  margin-right: 20px;
+}
+
+.book-image {
+  width: 100%; /* Adjust this as needed */
+  height: auto; /* This ensures the image maintains its aspect ratio */
+  cursor: pointer; /* Add cursor style for interaction */
+}
