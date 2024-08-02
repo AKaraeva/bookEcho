@@ -24,9 +24,6 @@ body {
     background-size: cover;
     background-image: url("images/images.jpg"); 
     background-repeat: no-repeat;  
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     margin: 0;
     overflow: auto;
@@ -51,6 +48,8 @@ body {
     background-color: #fff;
     border: 1px solid #ddd;
     padding: 20px;
+    margin: 20rem;
+    border-radius: 4px;
   }
   
   .form-signin h2 {
@@ -133,6 +132,7 @@ body {
   border: 1px solid #888;
   width: 80%;
   max-width: 500px;
+  border-radius: 4px;
 }
 
 .close {
@@ -148,6 +148,8 @@ body {
   color: #fff;
   border: none;
   cursor: pointer;
+  border-radius: 5px;
+ 
 }
 
 #openModal:hover {
@@ -260,14 +262,21 @@ html, body {
   color: black;
 }
 
-.product {
-  width: 250px; 
-  height: 250px;
+.product-list {
+  display: flex; /* Use flexbox for a row layout */
+  flex-direction: row; /* Ensure items are in a row */
+  width: 100%; 
   margin: 10px;
-  display: inline-block;
   color: black;
   padding: 10px;  
   margin-right: 20px;
+  justify-content: flex-start; /* Align items to the left */
+  gap: 20px;
+  margin-top: 44px;
+}
+
+.product {
+  align-self: flex-start; /* Align items to the start of the container */
 }
 
 .book-image {
